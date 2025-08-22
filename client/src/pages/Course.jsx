@@ -6,7 +6,7 @@ const Course = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/courses")
+    fetch("https://learnxbackend.onrender.com/api/courses")
       .then((res) => res.json())
       .then((data) => setCourses(data))
       .catch((err) => console.error(err));
