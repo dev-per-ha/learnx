@@ -20,7 +20,7 @@ const AddCourseModules = () => {
 
   const fetchModules = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/courses/${courseId}`);
+      const res = await axios.get(`https://learnxbackend.onrender.com/api/courses/${courseId}`);
       setModules(res.data.modules || []);
     } catch (error) {
       console.error(error);
@@ -49,7 +49,7 @@ const AddCourseModules = () => {
       if (editingModuleId) {
         // Update existing module
         await axios.put(
-          `http://localhost:5000/api/courses/${courseId}/modules/${editingModuleId}`,
+          `https://learnxbackend.onrender.com/api/courses/${courseId}/modules/${editingModuleId}`,
           formData,
           { headers: { "Content-Type": "multipart/form-data" } }
         );
@@ -57,7 +57,7 @@ const AddCourseModules = () => {
       } else {
         // Add new module
         await axios.post(
-          `http://localhost:5000/api/courses/${courseId}/modules`,
+          `https://learnxbackend.onrender.com/api/courses/${courseId}/modules`,
           formData,
           { headers: { "Content-Type": "multipart/form-data" } }
         );
@@ -82,7 +82,7 @@ const handleDeleteModule = async (moduleId) => {
   if (!window.confirm("Delete this module?")) return;
   try {
     const res = await axios.delete(
-      `http://localhost:5000/api/courses/${courseId}/modules/${moduleId}`
+      `https://learnxbackend.onrender.com/api/courses/${courseId}/modules/${moduleId}`
     );
     console.log("Delete response:", res.data);
     fetchModules();
@@ -219,7 +219,7 @@ const handleDeleteModule = async (moduleId) => {
                 )}
                 {mod.pdfUrl && (
                   <a
-                    href={`http://localhost:5000${mod.pdfUrl}`}
+                    href={`https://learnxbackend.onrender.com${mod.pdfUrl}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-indigo-600 text-sm underline mr-3"
@@ -229,7 +229,7 @@ const handleDeleteModule = async (moduleId) => {
                 )}
                 {mod.quizUrl && (
                   <a
-                    href={`http://localhost:5000${mod.quizUrl}`}
+                    href={`https://learnxbackend.onrender.com${mod.quizUrl}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-green-600 text-sm underline"
