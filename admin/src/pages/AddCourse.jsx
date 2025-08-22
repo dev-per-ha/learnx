@@ -12,7 +12,7 @@ const AddCourse = () => {
 
   const fetchCourses = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/courses");
+      const res = await axios.get("https://learnxbackend.onrender.com/api/courses");
       setCourses(res.data);
     } catch (error) {
       console.error(error);
@@ -35,13 +35,13 @@ const AddCourse = () => {
     try {
       if (editId) {
         // UPDATE existing course
-        await axios.put(`http://localhost:5000/api/courses/${editId}`, formData, {
+        await axios.put(`https://learnxbackend.onrender.com/api/courses/${editId}`, formData, {
           headers: { "Content-Type": "multipart/form-data" },
         });
         setEditId(null);
       } else {
         // ADD new course
-        await axios.post("http://localhost:5000/api/courses", formData, {
+        await axios.post("https://learnxbackend.onrender.com/api/courses", formData, {
           headers: { "Content-Type": "multipart/form-data" },
         });
       }
@@ -67,7 +67,7 @@ const AddCourse = () => {
   const handleDelete = async (id) => {
     if (!window.confirm("Delete this course?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/courses/${id}`);
+      await axios.delete(`https://learnxbackend.onrender.com/api/courses/${id}`);
       setCourses(courses.filter((c) => c._id !== id));
     } catch (error) {
       console.error(error);
