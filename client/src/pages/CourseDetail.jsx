@@ -8,7 +8,7 @@ const CourseDetail = () => {
   const [selectedModuleIndex, setSelectedModuleIndex] = useState(0);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/courses/${courseId}`)
+    fetch(`https://learnxbackend.onrender.com/api/courses/${courseId}`)
       .then((res) => res.json())
       .then((data) => {
         setCourse(data);
