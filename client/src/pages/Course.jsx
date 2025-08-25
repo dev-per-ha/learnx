@@ -26,7 +26,7 @@ const Course = () => {
         id="animate-fadeInUp"
       >
         <img
-          src={`http://localhost:5000${course.imageUrl}`}
+          src={`https://learnxbackend.onrender.com${course.imageUrl}`}
           alt={course.title}
           className="h-48 object-cover w-full"
         />
