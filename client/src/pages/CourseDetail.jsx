@@ -85,7 +85,7 @@ const CourseDetail = () => {
             <div className="flex flex-wrap items-center gap-4 mt-4">
               {selectedModule.pdfUrl && (
                 <a
-                  href={`http://localhost:5000${selectedModule.pdfUrl}`}
+                  href={`https://learnxbackend.onrender.com${selectedModule.pdfUrl}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg shadow transition"
@@ -96,7 +96,7 @@ const CourseDetail = () => {
 
               {selectedModule.quizUrl && (
                 <a
-                  href={`http://localhost:5000${selectedModule.quizUrl}`}
+                  href={`https://learnxbackend.onrender.com${selectedModule.quizUrl}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg shadow transition"
