@@ -60,7 +60,7 @@ const Footer = () => {
         <h4 className="text-xl font-semibold mb-4 text-green-100">Join Now</h4>
         <div className="flex space-x-5 text-2xl">
           <a
-            href="https://t.me/yourchannel"
+            href="https://t.me/Devper17"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition duration-300"
@@ -68,7 +68,7 @@ const Footer = () => {
             <FaTelegramPlane />
           </a>
           <a
-            href="https://www.linkedin.com/in/yourprofile"
+            href="https://linkedin.com/in/dev-per-185342372"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition duration-300"
@@ -76,7 +76,7 @@ const Footer = () => {
             <FaLinkedinIn />
           </a>
           <a
-            href="https://facebook.com/yourpage"
+            href="https://facebook.com/deva.afewerk"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition duration-300"
