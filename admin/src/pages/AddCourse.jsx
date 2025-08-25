@@ -116,7 +116,7 @@ const AddCourse = () => {
             className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl max-w-xl mx-auto"
           >
             <img
-              src={`http://localhost:5000${course.imageUrl}`}
+              src={`https://learnxbackend.onrender.com${course.imageUrl}`}
               alt={course.title}
               className="w-full h-48 object-cover rounded-t-lg"
             />
